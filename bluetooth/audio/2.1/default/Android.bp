@@ -22,6 +22,9 @@ cc_library_shared {
         "LeAudioOffloadAudioProvider.cpp",
     ],
     header_libs: ["libhardware_headers"],
+     include_dirs: [
+        "hardware/interfaces/bluetooth/audio/utils/session",
+    ],
     shared_libs: [
         "android.hardware.bluetooth.audio@2.0",
         "android.hardware.bluetooth.audio@2.1",
